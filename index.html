@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <section id="first part" class="first blue">
+      <div>
+        <div>
+          <h1>Password Generator</h1>
+        </div>
+
+        <div class="password container">
+          <p class="passwords" style="margin: 0;">*password*</p>
+        </div>
+      </div>
+      <button class="btnn">Generate</button>
+      <div class="container layout">
+        <div class="row">
+          <div class="col d-flex align-items-center">
+            <div class="d-flex">
+              <input
+                type="range"
+                id="rangeInput"
+                name="rangeInput"
+                min="5"
+                max="25"
+                value="12"
+                style="margin-top: 0.2rem"
+              />
+              <p class="ms-2 mb-0">
+                Selected Length: <span id="rangeValue">10</span>
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center justify-content-center">
+            <div class="d-flex gap-4">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked1"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked1">
+                  Punctuation
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked2"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked2">
+                  Mixed Case
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-fluid paragraphs">
+        <div class="row secure row-cols-1">
+          <div class="col lock" style="margin-bottom: 2rem">
+            <img
+              src="images\pngwing.com (4).png"
+              alt="secure"
+              class="img-fluid smaller-image"
+            />
+          </div>
+          <div class="col" style="margin-bottom: 2rem">
+            <h5>
+              Introducing our Password Generator! Secure your online accounts
+              with strong, unique passwords effortlessly. Our generator creates
+              highly secure passwords that are virtually impossible to guess.
+            </h5>
+          </div>
+        </div>
+        <div class="row include row-cols-1">
+          <div class="col lock2">
+            <img
+              src="images\pngwing.com (5).png"
+              alt="secure"
+              class="img-fluid smaller-image2"
+            />
+          </div>
+          <div class="col" style="margin-bottom: 5rem">
+            <h5>
+              Choose your desired password length and customize your
+              preferences. Include punctuation and mixed case letters for
+              maximum complexity.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="colored d-flex align-items-center justify-content-center">
+        <div class="store">
+          <h4>
+            Your passwords are never stored. Even if they were, we have no idea
+            who you are!
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="d-flex justify-content-center" style="height: 0">
+        <p>@m.ekinay © 2023-2024</p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
