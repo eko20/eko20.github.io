@@ -102,13 +102,14 @@
 }
 
 .colored {
-  height: 5rem;
+  
   background-color: #00ADB5;
   margin-bottom: 3rem;
 }
 
 .store {
   text-align: center;
+  margin: 1rem;
 }
 
 
