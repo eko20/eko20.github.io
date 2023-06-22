@@ -15,69 +15,88 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/dc7de1b8b4.js" crossorigin="anonymous"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
   <body>
-    <section id="first part" class="first blue">
-      <div>
-        <div>
-          <h1>Password Generator</h1>
-        </div>
+    <section>
+      <div id="first part" class="first blue container-fluid justify-content-center">
+        <div style="text-align: center; font-family: 'Poppins', sans-serif; ">
+          <div>
+            <h1>Password Generator</h1>
+          </div>
 
-        <div class="password container">
-          <p class="passwords" style="margin: 0;">*password*</p>
+          <div class="password container">
+            <p class="passwords" style="margin: 0">*password*</p>
+          </div>
         </div>
-      </div>
-      <button class="btnn">Generate</button>
-      <div class="container layout">
         <div class="row">
-          <div class="col d-flex align-items-center">
-            <div class="d-flex">
-              <input
-                type="range"
-                id="rangeInput"
-                name="rangeInput"
-                min="5"
-                max="25"
-                value="12"
-                style="margin-top: 0.2rem"
-              />
-              <p class="ms-2 mb-0">
-                Selected Length: <span id="rangeValue">10</span>
-              </p>
+          <div class="col-sm-6 end " >
+            <div class="valuebox d-flex justify-content-center align-items-center col" ">
+              
+              <p style="font-family: 'Noto Sans', sans-serif;" class="strong">very strong</p>
+              
             </div>
           </div>
-          <div class="col d-flex align-items-center justify-content-center">
-            <div class="d-flex gap-4">
-              <div class="form-check">
+          <div class="col-sm-6 col d-flex">
+            <button class="icon-butto refresh btn btn-lg btn-outline-light"><i id="spin" class="fa-solid fa-arrows-rotate"></i></button>
+            <button class="icon-butto copy btn btn-lg btn-outline-light" style="margin-left: 1rem;"><i class="fa-regular fa-copy"></i></button>
+          </div>
+        </div>
+        <div class="container layout">
+          <div class="row">
+            <div class="col d-flex align-items-center">
+              <div class="d-flex">
                 <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked1"
-                  checked
+                  type="range"
+                  id="rangeInput"
+                  name="rangeInput"
+                  min="5"
+                  max="25"
+                  value="20"
+                  style="margin-top: 0.2rem"
                 />
-                <label class="form-check-label" for="flexCheckChecked1">
-                  Punctuation
-                </label>
+                <p class="ms-2 mb-0">
+                  Selected Length: <span id="rangeValue">20</span>
+                </p>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked2"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked2">
-                  Mixed Case
-                </label>
+            </div>
+            <div class="col d-flex align-items-center justify-content-center">
+              <div class="d-flex gap-4">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked1"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked1">
+                    Punctuation
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked2"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked2">
+                    Mixed Case
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -123,7 +142,7 @@
     <section>
       <div class="colored d-flex align-items-center justify-content-center">
         <div class="store">
-          <h4>
+          <h4 style="font-family: 'Open Sans', sans-serif;">
             Your passwords are never stored. Even if they were, we have no idea
             who you are!
           </h4>
@@ -132,7 +151,7 @@
     </section>
     <section>
       <div class="d-flex justify-content-center" style="height: 0">
-        <p>@m.ekinay © 2023-2024</p>
+        <p><i>@m.ekinay © 2023-2024</i></p>
       </div>
     </section>
     <script

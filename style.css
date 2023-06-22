@@ -2,18 +2,16 @@
 
 .first {
   background-color: #222831;
-  
 }
 
 .blue {
-  text-align: center;
   padding: 2rem 0 2rem 0;
   color: #eeeeee;
 }
 
 .password {
-  background-color: white;
-  margin: 3rem auto 2rem auto;
+  background-color: #eeeeee;
+  margin: 2rem auto 2rem auto;
   color: black;
   border-radius: 10px;
   padding: 10px;
@@ -22,41 +20,28 @@
   font-family: "Courier New", sans-serif;
 }
 
-.generate {
-  margin: 3rem 0 0 0;
-}
-
-.btnn {
-  margin: auto;
-  font-size: 14px;
-  color: #fff;
-  background-color: #00adb5;
-  padding: 10px 50px;
-  border: solid #00adb5 2px;
-  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
-  border-radius: 50px;
-  transition: 371ms;
-  transform: translateY(0);
+.valuebox {
+  margin: 4.5px 15px auto auto;
+  background-color: white;
+  width: 7rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  cursor: pointer;
+  height: 2.5rem;
+  border-radius: 20px;
 }
 
-.btnn:hover {
-  transition: 371ms;
-  padding: 10px 69px;
-  transform: translateY(-0px);
-  background-color: #393e46;
-  color: white;
-  border: solid 2px #0066cc;
+.strong {
+  margin: auto;
+}
+
+.refresh {
+  background-color: #222831;
 }
 
 .layout {
   height: 4rem;
   width: 22rem !important;
-  margin-top: 2rem;
-  background-color: #393E46;
+  margin-top: 1.5rem;
+  background-color: #393e46;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -69,15 +54,11 @@
   margin-right: 0.5rem;
 }
 
-
-
 .layout .col.d-flex.align-items-center.justify-content-center .form-check {
- 
   margin-bottom: 1;
 }
 
 .paragraphs {
-  
   margin: 3% 0 0 0;
 }
 
@@ -85,7 +66,6 @@
   padding: 0 10%;
   text-align: center;
 }
-
 
 .smaller-image {
   max-width: 150px;
@@ -102,8 +82,7 @@
 }
 
 .colored {
-  
-  background-color: #00ADB5;
+  background-color: #00adb5;
   margin-bottom: 3rem;
 }
 
@@ -112,11 +91,28 @@
   margin: 1rem;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
+.spin {
+  animation: spin 0.3s infinite linear;
+}
 
+@media (max-width: 768px) {
+  .valuebox {
+    margin: 0 auto 1rem auto;
+  }
 
-
-
-
-
-
+  .icon-butto {
+    display: block;
+    margin: 0.8rem auto;
+    width: 20%;
+    height: 3.8rem;
+  }
+}
