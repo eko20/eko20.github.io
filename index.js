@@ -18,7 +18,7 @@ $(document).ready(function () {
     const punctation = "!'.;,:?_-`¨";
     const mixedCase = "^+%&/()=*<>}][{½$#£@€ßæ";
 
-    let password = " ";
+    let password = "";
     let charathers = upperCase + lowerCase + number;
     if (includePun) {
       charathers += punctation;
