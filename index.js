@@ -77,6 +77,19 @@ $(document).ready(function () {
 
   passwordWrite();
 
+  function copiedText() {
+    let currentPassword = passwordContainer.text();
+    let copy = "!!! Copied !!!";
+    
+    passwordContainer.hide().fadeIn(600).text(copy);
+    
+    setTimeout(function() {
+      passwordContainer.fadeOut(600, function() {
+        passwordContainer.text(currentPassword).fadeIn(600);
+      });
+    }, 1500);
+  }
+  
   copy.on("click", function () {
     let copyText = $(".passwords");
     let curentPassword = copyText.text();
@@ -89,6 +102,9 @@ $(document).ready(function () {
       .catch(function (error) {
         console.error("Unable to copy text to clipboard:", error);
       });
+
+    copiedText();
+
   });
 
   refresh.click(function () {
